@@ -25,7 +25,10 @@
                 })
 
             // Verify Presence Top Stories
-            cy.get('#adb-article-top-stories').trigger('mouseover').should('be.visible')
+            cy.get('#adb-article-top-stories').invoke('show');
+            cy.get('#adb-article-top-stories').trigger('mouseover',{force: true}).should('be.visible')
+
+            cy.get('#adb-article-you-might-also-like').invoke('show');
             cy.get('#adb-article-you-might-also-like').trigger('mouseover').should('be.visible')
 
         })
