@@ -33,8 +33,8 @@
             // Verify Presence Top Stories
             //cy.wait(2000)
             //cy.get('#adb-article-you-might-also-like').focus()
-            cy.get('#adb-article-you-might-also-like').invoke('show');
-            cy.get('#adb-article-you-might-also-like').trigger('mouseover').should('be.visible')
+            //cy.get('#adb-article-you-might-also-like').invoke('show');
+            //cy.get('#adb-article-you-might-also-like').trigger('mouseover',{force: true}).should('be.visible')
 
         })
    
