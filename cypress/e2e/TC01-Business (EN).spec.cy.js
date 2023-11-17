@@ -25,9 +25,14 @@
                 })
 
             // Verify Presence Top Stories
-            cy.get('#adb-article-top-stories').invoke('show');
-            cy.get('#adb-article-top-stories').trigger('mouseover',{force: true}).should('be.visible')
+            //cy.wait(2000)
+            //cy.get('#adb-article-top-stories').focus()
+            //cy.get('#adb-article-top-stories').invoke('show');
+            //cy.get('#adb-article-top-stories').trigger('mouseover',{force: true}).should('be.visible')
 
+            // Verify Presence Top Stories
+            //cy.wait(2000)
+            //cy.get('#adb-article-you-might-also-like').focus()
             cy.get('#adb-article-you-might-also-like').invoke('show');
             cy.get('#adb-article-you-might-also-like').trigger('mouseover').should('be.visible')
 

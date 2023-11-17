@@ -15,7 +15,6 @@
             cy.get('form[id="gigya-login-form"] input[name="password"]').type('Test-1234')
             cy.get('form[id="gigya-login-form"]').submit()
 
-
             cy.get('span').contains('My Profile').click({force: true})
             cy.get('span').contains('My Newsletters').click({force: true})
             cy.get('span').contains('Contact').trigger('mouseover')
